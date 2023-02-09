@@ -5,7 +5,7 @@ import '../App.css'
 function Favorits() {
   return (
     <div>
-      favorists
+      <p>Your Favorites</p>
     </div>
   )
 }

@@ -9,14 +9,14 @@ import Footer from "./Components/Footer";
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      <Navbar />
       <Routes>
         <Route path="/" element={<BookList />}></Route>
-        <Route path="/book/:id" element={<BookDatails />}></Route>
+
         <Route path="/favorites" element={<Favorits />}></Route>
-       
+        <Route path="/book/:id" element={<BookDatails />}></Route>
       </Routes>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
