@@ -42,6 +42,8 @@ img{
 
 a{
   color: white;
+  text-decoration: none;
+  cursor: pointer;
 }
 img:hover{
   transform: scale(1.1);

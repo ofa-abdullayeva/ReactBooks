@@ -14,7 +14,7 @@ function App() {
         <Route path="/" element={<BookList />}></Route>
 
         <Route path="/favorites" element={<Favorits />}></Route>
-        <Route path="/book/:id" element={<BookDatails />}></Route>
+        <Route path="/books/:id" element={<BookDatails />}></Route>
       </Routes>
       <Footer />
     </div>
