@@ -3,7 +3,7 @@ import '../App.css'
 import { API_URL } from '../APi'
 import axios from 'axios'
 import { useAppContext } from '../Context/AppContext'
-import { useNavigate} from 'react-router'
+import { useNavigate} from 'react-router-dom'
 
 
 function BookList() {
@@ -23,7 +23,6 @@ function BookList() {
     axios
     .get(API_URL)
     .then((res)=>{
-      console.log(res.data);
       setBooks(res.data);
     })
     .catch((err)=>console.log(err))
@@ -34,7 +33,7 @@ function BookList() {
      {books.map((book)=>(
       <div key={book.id} className='book'>
         <div><h4>{book.title}</h4></div>
-        <div><img src={book.image_url} alt='img' onClick={()=>Navigate(`/book/${books.id}`)}/></div>
+        <div><img src={book.image_url} alt='img' onClick={()=>Navigate(`/books/${book.id}`)}/></div>
         <div>
           {
             favoritesChecker(book.id) ? ( <button 

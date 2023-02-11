@@ -57,6 +57,7 @@ img:hover{
   flex-direction: column;
   margin: 20px 0;
 }
+
 button{
   padding: 10px;
   background-color: rgb(66, 11, 73);
@@ -74,4 +75,23 @@ button{
   grid-template-columns: repeat(3,1fr);
   justify-items: center;
   align-items: center;
+}
+
+.book-details{
+  min-height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* text-align: center; */
+  padding: 10px;
+}
+
+
+.book-image{
+  font-size: 22px;
+}
+.book-description{
+  margin: 0 10px;
+  padding: 20px 25px;
 }
